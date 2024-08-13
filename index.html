@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nth Child Example</title>
+
+    <style>
+*{ box-sizing: border-box; }
+
+
+.name
+{
+text-align:left;
+position:absolute;
+left: -50%;
+color:red;
+font-size:27px;
+font-weight:800;
+overflow:hidden;
+}
+ 
+       .parking1
+        {
+            border-radius: 5px;
+        }
+      .level1 {
+     
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 0%;
+      }
+      .level11 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:0%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level11:hover
+       {
+  
+       transition-duration: 369ms;
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:0%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .parking2
+        {
+
+            border-radius: 5px;
+        }
+      .level2 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 15%;
+      }
+      .level22 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:15%;
+        left:25%;
+        position: absolute;
+
+      }
+      .level22:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:15%;
+        left:25%;
+        position: absolute;
+ transition-duration: 369ms;
+                
+      }
+      .parking3
+        {
+          
+            border-radius: 5px;
+        }
+      .level3 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 30%;
+      }
+      .level33 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:30%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level33:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:30%;
+        left:25%;
+        position: absolute;
+ transition-duration: 369ms;
+        
+      }
+      .parking4
+        {
+            
+            border-radius: 5px;
+        }
+      .level4{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 45%;
+      }
+      .level44 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:45%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level44:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:45%;
+        left:25%;
+        position: absolute;
+ transition-duration: 369ms;
+        
+        
+      }
+
+      .parking5
+        {
+            
+            border-radius: 5px;
+        }
+      .level5{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 60%;
+      }
+      .level55 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:60%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level55:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:60%;
+        left:25%;
+        position: absolute;
+         transition-duration: 369ms;
+        
+      }
+
+      .parking6
+        {
+            
+            border-radius: 5px;
+        }
+      .level6{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 75%;
+      }
+      .level66 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:75%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level66:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:75%;
+        left:25%;
+        position: absolute;
+         transition-duration: 369ms;
+        
+      }
+      .parking7
+        {
+            
+            border-radius: 5px;
+        }
+      .level7{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 90%;
+      }
+      .level77 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:90%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level77:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:90%;
+        left:25%;
+        position: absolute;
+         transition-duration: 369ms;
+        
+      }
+
+ .parking8
+        {
+            
+            border-radius: 5px;
+        }
+      .level8{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 105%;
+      }
+      .level88 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:105%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level88:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:105%;
+        left:25%;
+        position: absolute;
+         transition-duration: 369ms;
+        
+      }
+
+
+  .parking9
+        {
+            
+            border-radius: 5px;
+        }
+      .level9{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 120%;
+      }
+      .level99 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:120%;
+        left:25%;
+        position: absolute;
+        
+      }
+      .level99:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:120%;
+        left:25%;
+        position: absolute;
+         transition-duration: 369ms;
+        
+      }
+
+  .parking10
+        {
+            
+            border-radius: 5px;
+        }
+      .level10{
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+       position:absolute;
+        left: 25%;
+        top: 135%;
+      }
+      .level1010 {
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:135%;
+        left:25%;
+        position: absolute;
+        
+      }
+
+
+
+
+      .level1010:hover
+       {
+        opacity: 0;
+        height: fit-content;
+        margin: 50px auto;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        word-spacing: 5px;
+        width: 50%;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        top:135%;
+        left:25%;
+        position: absolute;
+         transition-duration: 369ms;
+        
+      }
+
+
+   
+
+
+    
+    </style>
+  </head>
+  <body>
+<div class="nth-childs">
+    <div class="parking1">
+        
+    
+      <div class="level1">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> first-child  </div>
+        <div class="car1" style="color:red;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car2"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car3"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car4"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car5"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car6"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car7"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car8"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car9"  style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car10" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+      </div>
+      <div class="level11">
+        <div class="car1" style="color:black;"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+        <div class="car10"><i class="fa-solid fa-taxi"></i></div>
+      </div>
+    </div>
+
+    <div class="parking2">
+        
+         
+       <div class="level2">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> last-child  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level22">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+     <div class="parking3">
+        
+        
+       <div class="level3">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(odd)  </div>
+         <div class="car1" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="opacity: 0.1;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level33">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+     <div class="parking4">
+        
+       
+       <div class="level4">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(even)  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level44">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+     <div class="parking5">
+        
+       
+       <div class="level5">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(3n)  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level55">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+     <div class="parking6">
+        
+      
+       <div class="level6">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(3n - 1)  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="opacity: 0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level66">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+     <div class="parking7">
+        
+        
+       <div class="level7">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(3n + 1)  </div>
+         <div class="car1" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="opacity: 0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level77">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+     <div class="parking8">
+        
+        
+       <div class="level8">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(n + 3)  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level88">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+  <div class="parking9">
+        
+        
+       <div class="level9">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-last-child(9)  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="color:red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level99">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+<div class="parking10">
+        
+        
+       <div class="level10">
+<div class="name" ><i class="fa-solid fa-angles-right"></i> nth-child(3)  </div>
+         <div class="car1" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3" style="color: red;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="opacity:0.1;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+       <div class="level1010">
+         <div class="car1"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car2"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car3"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car4"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car5"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car6"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car7"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car8"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car9"><i class="fa-solid fa-taxi"></i></div>
+         <div class="car10" style="color: black;"><i class="fa-solid fa-taxi"></i></div>
+       </div>
+     </div>
+
+
+
+
+
+</div>
+  </body>
+</html>
